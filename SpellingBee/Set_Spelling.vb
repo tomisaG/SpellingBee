@@ -1,23 +1,9 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 Public Class Set_Spelling
+    Dim Database(1000) As IDataRecord
+    Dim Filename As String = "database.txt"
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
-    End Sub
-    Private Sub CreateCSV(ByVal _Definition As String, ByVal _SetSpelling As String)
-        Try
-            Dim stline As String = ""
-            Dim objectWriter As IO.StreamWriter = IO.File.AppendText("C:\\ TomOye161$ \ Computing \ Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug\Spelling_Create.csv")
-            If IO.File.Exists("C:\\ TomOye161$ \ Computing \ Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug\Spelling_Create.csv") Then
-                objectWriter.Write(_Definition & ",")
-                objectWriter.Write(_SetSpelling & ",")
-                objectWriter.Write(Environment.NewLine)
-                stline = String.Format("{0}{1}," stline(), append)
-                objectWriter.Write(stline)
-            End If
-            objectWriter.Close()
-            ClearTextBox()
-        Catch ex As Exception
-        End Try
     End Sub
     Private Sub TB_Defination_TextChanged(sender As Object, e As EventArgs) Handles TB_Defination.TextChanged
 
@@ -35,5 +21,20 @@ Public Class Set_Spelling
     Private Sub Cmd_ShowCSV_Click(sender As Object, e As EventArgs) Handles Cmd_ShowCSV.Click
 
         Read.show()
+    End Sub
+
+    Private Sub Set_Spelling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+    Sub writefile()
+        Dim File As String = ""
+        Dim FieldSeperator As String = ","
+        Dim RecordSeperator As String = ";"
+        For i As Integer = 0 To Database.Length - 1
+            If ((Database(i).IsDBNull) <> False) Then
+
+            End If
+
+        Next
     End Sub
 End Class
