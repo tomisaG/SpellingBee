@@ -131,6 +131,9 @@
     <EmbeddedResource Include="Set_Spelling.resx">
       <DependentUpon>Set_Spelling.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Spelling_Bee.resx">
+      <DependentUpon>Spelling_Bee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Spelling_Test.resx">
       <DependentUpon>Spelling_Test.vb</DependentUpon>
     </EmbeddedResource>

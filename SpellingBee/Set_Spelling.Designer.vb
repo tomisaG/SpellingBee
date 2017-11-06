@@ -24,11 +24,12 @@ Partial Class Set_Spelling
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TB_Spelling = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Cmd_Sumbit = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TB_Defination = New System.Windows.Forms.TextBox()
+        Me.Cmd_ShowCSV = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -47,14 +48,14 @@ Partial Class Set_Spelling
         Me.TB_Spelling.Size = New System.Drawing.Size(129, 20)
         Me.TB_Spelling.TabIndex = 1
         '
-        'Button1
+        'Cmd_Sumbit
         '
-        Me.Button1.Location = New System.Drawing.Point(374, 294)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 32)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Submit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Cmd_Sumbit.Location = New System.Drawing.Point(374, 294)
+        Me.Cmd_Sumbit.Name = "Cmd_Sumbit"
+        Me.Cmd_Sumbit.Size = New System.Drawing.Size(110, 32)
+        Me.Cmd_Sumbit.TabIndex = 2
+        Me.Cmd_Sumbit.Text = "Submit"
+        Me.Cmd_Sumbit.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -88,16 +89,26 @@ Partial Class Set_Spelling
         Me.TB_Defination.Size = New System.Drawing.Size(129, 20)
         Me.TB_Defination.TabIndex = 6
         '
+        'Cmd_ShowCSV
+        '
+        Me.Cmd_ShowCSV.Location = New System.Drawing.Point(12, 294)
+        Me.Cmd_ShowCSV.Name = "Cmd_ShowCSV"
+        Me.Cmd_ShowCSV.Size = New System.Drawing.Size(110, 32)
+        Me.Cmd_ShowCSV.TabIndex = 7
+        Me.Cmd_ShowCSV.Text = "Show CSV"
+        Me.Cmd_ShowCSV.UseVisualStyleBackColor = True
+        '
         'Set_Spelling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 348)
+        Me.Controls.Add(Me.Cmd_ShowCSV)
         Me.Controls.Add(Me.TB_Defination)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Cmd_Sumbit)
         Me.Controls.Add(Me.TB_Spelling)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Set_Spelling"
@@ -109,9 +120,10 @@ Partial Class Set_Spelling
 
     Friend WithEvents Label1 As Label
     Friend WithEvents TB_Spelling As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Cmd_Sumbit As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents TB_Defination As TextBox
+    Friend WithEvents Cmd_ShowCSV As Button
 End Class
