@@ -23,13 +23,14 @@ Partial Class Set_Spelling
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TB_Spelling = New System.Windows.Forms.TextBox()
+        Me.txtSpelling = New System.Windows.Forms.TextBox()
         Me.Cmd_Sumbit = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TB_Defination = New System.Windows.Forms.TextBox()
+        Me.txtDefinition = New System.Windows.Forms.TextBox()
         Me.Cmd_ShowCSV = New System.Windows.Forms.Button()
+        Me.SFDWriter = New System.Windows.Forms.SaveFileDialog()
         Me.SuspendLayout()
         '
         'Label1
@@ -41,12 +42,12 @@ Partial Class Set_Spelling
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Set Spelling"
         '
-        'TB_Spelling
+        'txtSpelling
         '
-        Me.TB_Spelling.Location = New System.Drawing.Point(143, 122)
-        Me.TB_Spelling.Name = "TB_Spelling"
-        Me.TB_Spelling.Size = New System.Drawing.Size(129, 20)
-        Me.TB_Spelling.TabIndex = 1
+        Me.txtSpelling.Location = New System.Drawing.Point(143, 119)
+        Me.txtSpelling.Name = "txtSpelling"
+        Me.txtSpelling.Size = New System.Drawing.Size(129, 20)
+        Me.txtSpelling.TabIndex = 1
         '
         'Cmd_Sumbit
         '
@@ -82,12 +83,12 @@ Partial Class Set_Spelling
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Defination"
         '
-        'TB_Defination
+        'txtDefinition
         '
-        Me.TB_Defination.Location = New System.Drawing.Point(143, 76)
-        Me.TB_Defination.Name = "TB_Defination"
-        Me.TB_Defination.Size = New System.Drawing.Size(129, 20)
-        Me.TB_Defination.TabIndex = 6
+        Me.txtDefinition.Location = New System.Drawing.Point(143, 73)
+        Me.txtDefinition.Name = "txtDefinition"
+        Me.txtDefinition.Size = New System.Drawing.Size(129, 20)
+        Me.txtDefinition.TabIndex = 6
         '
         'Cmd_ShowCSV
         '
@@ -98,18 +99,22 @@ Partial Class Set_Spelling
         Me.Cmd_ShowCSV.Text = "Show CSV"
         Me.Cmd_ShowCSV.UseVisualStyleBackColor = True
         '
+        'SFDWriter
+        '
+        Me.SFDWriter.Filter = "CSV Files|*.csv"
+        '
         'Set_Spelling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 348)
         Me.Controls.Add(Me.Cmd_ShowCSV)
-        Me.Controls.Add(Me.TB_Defination)
+        Me.Controls.Add(Me.txtDefinition)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Cmd_Sumbit)
-        Me.Controls.Add(Me.TB_Spelling)
+        Me.Controls.Add(Me.txtSpelling)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Set_Spelling"
         Me.Text = "Set_Spelling"
@@ -119,11 +124,12 @@ Partial Class Set_Spelling
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TB_Spelling As TextBox
+    Friend WithEvents txtSpelling As TextBox
     Friend WithEvents Cmd_Sumbit As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label3 As Label
-    Friend WithEvents TB_Defination As TextBox
+    Friend WithEvents txtDefinition As TextBox
     Friend WithEvents Cmd_ShowCSV As Button
+    Friend WithEvents SFDWriter As SaveFileDialog
 End Class

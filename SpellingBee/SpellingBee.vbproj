@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin page.Designer.vb">
+      <DependentUpon>Admin page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin page.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Set_Spelling.Designer.vb">
       <DependentUpon>Set_Spelling.vb</DependentUpon>
     </Compile>
@@ -128,6 +134,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin page.resx">
+      <DependentUpon>Admin page.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Set_Spelling.resx">
       <DependentUpon>Set_Spelling.vb</DependentUpon>
     </EmbeddedResource>
