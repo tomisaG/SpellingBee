@@ -21,4 +21,12 @@ Public Class Set_Spelling
         System.IO.File.WriteAllLines(SFDWriter.FileName, writestring)
         GC.Collect()
     End Sub
+
+    Private Sub Set_Spelling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub txtDefinition_TextChanged(sender As Object, e As EventArgs) Handles txtDefinition.TextChanged
+
+    End Sub
 End Class

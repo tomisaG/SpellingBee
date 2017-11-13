@@ -27,8 +27,8 @@ Partial Class Student_Login
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Txt_Username = New System.Windows.Forms.TextBox()
+        Me.txt_Password = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -59,19 +59,19 @@ Partial Class Student_Login
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Username"
         '
-        'TextBox1
+        'Txt_Username
         '
-        Me.TextBox1.Location = New System.Drawing.Point(139, 131)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.Txt_Username.Location = New System.Drawing.Point(139, 131)
+        Me.Txt_Username.Name = "Txt_Username"
+        Me.Txt_Username.Size = New System.Drawing.Size(171, 20)
+        Me.Txt_Username.TabIndex = 3
         '
-        'TextBox2
+        'txt_Password
         '
-        Me.TextBox2.Location = New System.Drawing.Point(139, 170)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.txt_Password.Location = New System.Drawing.Point(139, 170)
+        Me.txt_Password.Name = "txt_Password"
+        Me.txt_Password.Size = New System.Drawing.Size(171, 20)
+        Me.txt_Password.TabIndex = 4
         '
         'Button2
         '
@@ -88,8 +88,8 @@ Partial Class Student_Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 345)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_Password)
+        Me.Controls.Add(Me.Txt_Username)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -104,7 +104,7 @@ Partial Class Student_Login
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Txt_Username As TextBox
+    Friend WithEvents txt_Password As TextBox
     Friend WithEvents Button2 As Button
 End Class

@@ -29,7 +29,6 @@ Partial Class Set_Spelling
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtDefinition = New System.Windows.Forms.TextBox()
-        Me.Cmd_ShowCSV = New System.Windows.Forms.Button()
         Me.SFDWriter = New System.Windows.Forms.SaveFileDialog()
         Me.SuspendLayout()
         '
@@ -77,7 +76,7 @@ Partial Class Set_Spelling
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(42, 76)
+        Me.Label3.Location = New System.Drawing.Point(50, 76)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 5
@@ -90,15 +89,6 @@ Partial Class Set_Spelling
         Me.txtDefinition.Size = New System.Drawing.Size(129, 20)
         Me.txtDefinition.TabIndex = 6
         '
-        'Cmd_ShowCSV
-        '
-        Me.Cmd_ShowCSV.Location = New System.Drawing.Point(12, 294)
-        Me.Cmd_ShowCSV.Name = "Cmd_ShowCSV"
-        Me.Cmd_ShowCSV.Size = New System.Drawing.Size(110, 32)
-        Me.Cmd_ShowCSV.TabIndex = 7
-        Me.Cmd_ShowCSV.Text = "Show CSV"
-        Me.Cmd_ShowCSV.UseVisualStyleBackColor = True
-        '
         'SFDWriter
         '
         Me.SFDWriter.Filter = "CSV Files|*.csv"
@@ -108,7 +98,6 @@ Partial Class Set_Spelling
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 348)
-        Me.Controls.Add(Me.Cmd_ShowCSV)
         Me.Controls.Add(Me.txtDefinition)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -130,6 +119,5 @@ Partial Class Set_Spelling
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents txtDefinition As TextBox
-    Friend WithEvents Cmd_ShowCSV As Button
     Friend WithEvents SFDWriter As SaveFileDialog
 End Class

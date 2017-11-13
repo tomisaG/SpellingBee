@@ -24,10 +24,14 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.lbl_Login = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Cmd_Username = New System.Windows.Forms.TextBox()
-        Me.Cmd_Password = New System.Windows.Forms.TextBox()
-        Me.Cmd_Login = New System.Windows.Forms.Button()
+        Me.txt_Username = New System.Windows.Forms.TextBox()
+        Me.txt_Password = New System.Windows.Forms.TextBox()
+        Me.Login = New System.Windows.Forms.Button()
         Me.Teacher_Login = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txt_Year = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbl_Login
@@ -48,28 +52,28 @@ Partial Class Form1
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Password"
         '
-        'Cmd_Username
+        'txt_Username
         '
-        Me.Cmd_Username.Location = New System.Drawing.Point(156, 112)
-        Me.Cmd_Username.Name = "Cmd_Username"
-        Me.Cmd_Username.Size = New System.Drawing.Size(146, 20)
-        Me.Cmd_Username.TabIndex = 2
+        Me.txt_Username.Location = New System.Drawing.Point(156, 112)
+        Me.txt_Username.Name = "txt_Username"
+        Me.txt_Username.Size = New System.Drawing.Size(146, 20)
+        Me.txt_Username.TabIndex = 2
         '
-        'Cmd_Password
+        'txt_Password
         '
-        Me.Cmd_Password.Location = New System.Drawing.Point(156, 160)
-        Me.Cmd_Password.Name = "Cmd_Password"
-        Me.Cmd_Password.Size = New System.Drawing.Size(146, 20)
-        Me.Cmd_Password.TabIndex = 3
+        Me.txt_Password.Location = New System.Drawing.Point(156, 160)
+        Me.txt_Password.Name = "txt_Password"
+        Me.txt_Password.Size = New System.Drawing.Size(146, 20)
+        Me.txt_Password.TabIndex = 3
         '
-        'Cmd_Login
+        'Login
         '
-        Me.Cmd_Login.Location = New System.Drawing.Point(359, 280)
-        Me.Cmd_Login.Name = "Cmd_Login"
-        Me.Cmd_Login.Size = New System.Drawing.Size(75, 23)
-        Me.Cmd_Login.TabIndex = 4
-        Me.Cmd_Login.Text = "Login"
-        Me.Cmd_Login.UseVisualStyleBackColor = True
+        Me.Login.Location = New System.Drawing.Point(370, 273)
+        Me.Login.Name = "Login"
+        Me.Login.Size = New System.Drawing.Size(75, 23)
+        Me.Login.TabIndex = 4
+        Me.Login.Text = "Login"
+        Me.Login.UseVisualStyleBackColor = True
         '
         'Teacher_Login
         '
@@ -80,15 +84,51 @@ Partial Class Form1
         Me.Teacher_Login.TabIndex = 5
         Me.Teacher_Login.Text = "Teacher_Login"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(36, 217)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(61, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Year Group"
+        '
+        'txt_Year
+        '
+        Me.txt_Year.Location = New System.Drawing.Point(156, 210)
+        Me.txt_Year.Name = "txt_Year"
+        Me.txt_Year.Size = New System.Drawing.Size(146, 20)
+        Me.txt_Year.TabIndex = 7
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(156, 71)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox1.TabIndex = 8
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(36, 74)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(35, 13)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Name"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(482, 332)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txt_Year)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Teacher_Login)
-        Me.Controls.Add(Me.Cmd_Login)
-        Me.Controls.Add(Me.Cmd_Password)
-        Me.Controls.Add(Me.Cmd_Username)
+        Me.Controls.Add(Me.Login)
+        Me.Controls.Add(Me.txt_Password)
+        Me.Controls.Add(Me.txt_Username)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_Login)
         Me.Name = "Form1"
@@ -100,8 +140,12 @@ Partial Class Form1
 
     Friend WithEvents lbl_Login As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Cmd_Username As TextBox
-    Friend WithEvents Cmd_Password As TextBox
-    Friend WithEvents Cmd_Login As Button
+    Friend WithEvents txt_Username As TextBox
+    Friend WithEvents txt_Password As TextBox
+    Friend WithEvents Login As Button
     Friend WithEvents Teacher_Login As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txt_Year As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
 End Class
