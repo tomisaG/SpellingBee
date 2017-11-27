@@ -26,16 +26,19 @@ Partial Class Set_Spelling
         Me.txtSpelling = New System.Windows.Forms.TextBox()
         Me.Cmd_Sumbit = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.cmd_Test = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtDefinition = New System.Windows.Forms.TextBox()
         Me.SFDWriter = New System.Windows.Forms.SaveFileDialog()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cmd_Definition = New System.Windows.Forms.DateTimePicker()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(42, 122)
+        Me.Label1.Location = New System.Drawing.Point(50, 122)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 13)
         Me.Label1.TabIndex = 0
@@ -60,18 +63,18 @@ Partial Class Set_Spelling
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(56, 167)
+        Me.Label2.Location = New System.Drawing.Point(50, 185)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(45, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Date Set"
+        Me.Label2.Text = "Test set"
         '
-        'DateTimePicker1
+        'cmd_Test
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(143, 161)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 4
+        Me.cmd_Test.Location = New System.Drawing.Point(143, 185)
+        Me.cmd_Test.Name = "cmd_Test"
+        Me.cmd_Test.Size = New System.Drawing.Size(200, 20)
+        Me.cmd_Test.TabIndex = 4
         '
         'Label3
         '
@@ -93,14 +96,41 @@ Partial Class Set_Spelling
         '
         Me.SFDWriter.Filter = "CSV Files|*.csv"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(56, 157)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(0, 13)
+        Me.Label4.TabIndex = 7
+        '
+        'cmd_Definition
+        '
+        Me.cmd_Definition.Location = New System.Drawing.Point(143, 157)
+        Me.cmd_Definition.Name = "cmd_Definition"
+        Me.cmd_Definition.Size = New System.Drawing.Size(200, 20)
+        Me.cmd_Definition.TabIndex = 8
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(50, 163)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(70, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Definition Set"
+        '
         'Set_Spelling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 348)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.cmd_Definition)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtDefinition)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.cmd_Test)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Cmd_Sumbit)
         Me.Controls.Add(Me.txtSpelling)
@@ -116,8 +146,11 @@ Partial Class Set_Spelling
     Friend WithEvents txtSpelling As TextBox
     Friend WithEvents Cmd_Sumbit As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents cmd_Test As DateTimePicker
     Friend WithEvents Label3 As Label
     Friend WithEvents txtDefinition As TextBox
     Friend WithEvents SFDWriter As SaveFileDialog
+    Friend WithEvents Label4 As Label
+    Friend WithEvents cmd_Definition As DateTimePicker
+    Friend WithEvents Label5 As Label
 End Class

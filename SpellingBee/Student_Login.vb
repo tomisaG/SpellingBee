@@ -15,13 +15,15 @@
             Password(x) = item(1)
             Username(x) = item(2)
         Loop
-        Do Until Txt_Username.Text = Username(x) And txt_Password.Text = Password(x)
+        Do Until x = 1
             If Txt_Username.Text = Username(x) And txt_Password.Text = Password(x) Then
-                MsgBox("This is correct")
+                My.Forms.Set_Spelling.Text = Now.ToString
+                My.Forms.Set_Spelling.Show()
             Else
-                MsgBox("This is incorrect")
+                x = 1
             End If
         Loop
+        FileClose(1)
     End Sub
 
 End Class

@@ -12,9 +12,16 @@
         PrintLine(1, fullline)
 
         FileClose(1)
+        Clearbox()
 
     End Sub
-
+    Private Sub Clearbox()
+        txt_Name.Text = ""
+        txt_Username.Text = ""
+        txt_Password.Text = ""
+        txt_year.Text = ""
+        txt_TS.Text = ""
+    End Sub
     Private Sub Admin_page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub

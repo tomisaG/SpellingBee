@@ -102,10 +102,10 @@
     <Compile Include="Student_Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teachers_Login.Designer.vb">
-      <DependentUpon>Teachers_Login.vb</DependentUpon>
+    <Compile Include="TeacherLogin.Designer.vb">
+      <DependentUpon>TeacherLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="Teachers_Login.vb">
+    <Compile Include="TeacherLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="\\file-home1\TomOye161%24\Computing\Year 2\Spelling Bee\Login.vb">
@@ -149,8 +149,8 @@
     <EmbeddedResource Include="Student_Login.resx">
       <DependentUpon>Student_Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teachers_Login.resx">
-      <DependentUpon>Teachers_Login.vb</DependentUpon>
+    <EmbeddedResource Include="TeacherLogin.resx">
+      <DependentUpon>TeacherLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="\\file-home1\TomOye161%24\Computing\Year 2\Spelling Bee\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
