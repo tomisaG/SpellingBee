@@ -30,6 +30,8 @@ Partial Class Student_Login
         Me.Txt_Username = New System.Windows.Forms.TextBox()
         Me.txt_Password = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -83,11 +85,30 @@ Partial Class Student_Login
         Me.Button2.Text = "Login"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(78, 218)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Year Group"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(145, 215)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox1.Size = New System.Drawing.Size(171, 20)
+        Me.TextBox1.TabIndex = 8
+        '
         'Student_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 345)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txt_Password)
         Me.Controls.Add(Me.Txt_Username)
@@ -108,4 +129,6 @@ Partial Class Student_Login
     Friend WithEvents Txt_Username As TextBox
     Friend WithEvents txt_Password As TextBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

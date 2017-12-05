@@ -24,10 +24,11 @@ Partial Class Spelling_Test
     Private Sub InitializeComponent()
         Me.txt_Defination = New System.Windows.Forms.TextBox()
         Me.cmd_start = New System.Windows.Forms.Button()
-        Me.cmd_answer = New System.Windows.Forms.TextBox()
+        Me.txt_answer = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Cmd_Check = New System.Windows.Forms.Button()
+        Me.txt_DateSet = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txt_Defination
@@ -46,12 +47,12 @@ Partial Class Spelling_Test
         Me.cmd_start.Text = "Start"
         Me.cmd_start.UseVisualStyleBackColor = True
         '
-        'cmd_answer
+        'txt_answer
         '
-        Me.cmd_answer.Location = New System.Drawing.Point(112, 164)
-        Me.cmd_answer.Name = "cmd_answer"
-        Me.cmd_answer.Size = New System.Drawing.Size(209, 20)
-        Me.cmd_answer.TabIndex = 2
+        Me.txt_answer.Location = New System.Drawing.Point(112, 164)
+        Me.txt_answer.Name = "txt_answer"
+        Me.txt_answer.Size = New System.Drawing.Size(209, 20)
+        Me.txt_answer.TabIndex = 2
         '
         'Label1
         '
@@ -80,15 +81,23 @@ Partial Class Spelling_Test
         Me.Cmd_Check.Text = "Check"
         Me.Cmd_Check.UseVisualStyleBackColor = True
         '
+        'txt_DateSet
+        '
+        Me.txt_DateSet.Location = New System.Drawing.Point(112, 62)
+        Me.txt_DateSet.Name = "txt_DateSet"
+        Me.txt_DateSet.Size = New System.Drawing.Size(173, 20)
+        Me.txt_DateSet.TabIndex = 6
+        '
         'Spelling_Test
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(475, 405)
+        Me.Controls.Add(Me.txt_DateSet)
         Me.Controls.Add(Me.Cmd_Check)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cmd_answer)
+        Me.Controls.Add(Me.txt_answer)
         Me.Controls.Add(Me.cmd_start)
         Me.Controls.Add(Me.txt_Defination)
         Me.Name = "Spelling_Test"
@@ -100,8 +109,9 @@ Partial Class Spelling_Test
 
     Friend WithEvents txt_Defination As TextBox
     Friend WithEvents cmd_start As Button
-    Friend WithEvents cmd_answer As TextBox
+    Friend WithEvents txt_answer As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Cmd_Check As Button
+    Friend WithEvents txt_DateSet As TextBox
 End Class
