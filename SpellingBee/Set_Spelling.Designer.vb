@@ -33,7 +33,7 @@ Partial Class Set_Spelling
 		Me.Label4 = New System.Windows.Forms.Label()
 		Me.cmd_Definition = New System.Windows.Forms.DateTimePicker()
 		Me.Label5 = New System.Windows.Forms.Label()
-		Me.TextBox1 = New System.Windows.Forms.TextBox()
+		Me.txt_YearGroup = New System.Windows.Forms.TextBox()
 		Me.Label6 = New System.Windows.Forms.Label()
 		Me.SuspendLayout()
 		'
@@ -122,12 +122,12 @@ Partial Class Set_Spelling
 		Me.Label5.TabIndex = 9
 		Me.Label5.Text = "Definition Set"
 		'
-		'TextBox1
+		'txt_YearGroup
 		'
-		Me.TextBox1.Location = New System.Drawing.Point(143, 236)
-		Me.TextBox1.Name = "TextBox1"
-		Me.TextBox1.Size = New System.Drawing.Size(129, 20)
-		Me.TextBox1.TabIndex = 10
+		Me.txt_YearGroup.Location = New System.Drawing.Point(143, 236)
+		Me.txt_YearGroup.Name = "txt_YearGroup"
+		Me.txt_YearGroup.Size = New System.Drawing.Size(129, 20)
+		Me.txt_YearGroup.TabIndex = 10
 		'
 		'Label6
 		'
@@ -144,7 +144,7 @@ Partial Class Set_Spelling
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(496, 348)
 		Me.Controls.Add(Me.Label6)
-		Me.Controls.Add(Me.TextBox1)
+		Me.Controls.Add(Me.txt_YearGroup)
 		Me.Controls.Add(Me.Label5)
 		Me.Controls.Add(Me.cmd_Definition)
 		Me.Controls.Add(Me.Label4)
@@ -173,6 +173,6 @@ Partial Class Set_Spelling
     Friend WithEvents Label4 As Label
     Friend WithEvents cmd_Definition As DateTimePicker
     Friend WithEvents Label5 As Label
-	Friend WithEvents TextBox1 As TextBox
+	Friend WithEvents txt_YearGroup As TextBox
 	Friend WithEvents Label6 As Label
 End Class

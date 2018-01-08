@@ -84,12 +84,6 @@
     <Compile Include="Set_Spelling.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Spelling_Bee.Designer.vb">
-      <DependentUpon>Spelling_Bee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Spelling_Bee.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Spelling_Test.Designer.vb">
       <DependentUpon>Spelling_Test.vb</DependentUpon>
     </Compile>
@@ -102,10 +96,16 @@
     <Compile Include="Student_Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherLogin.Designer.vb">
-      <DependentUpon>TeacherLogin.vb</DependentUpon>
+    <Compile Include="TeacherCheck.Designer.vb">
+      <DependentUpon>TeacherCheck.vb</DependentUpon>
     </Compile>
-    <Compile Include="TeacherLogin.vb">
+    <Compile Include="TeacherCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersLogin.Designer.vb">
+      <DependentUpon>TeachersLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="\\file-home1\TomOye161%24\Computing\Year 2\Spelling Bee\Login.vb">
@@ -140,17 +140,17 @@
     <EmbeddedResource Include="Set_Spelling.resx">
       <DependentUpon>Set_Spelling.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Spelling_Bee.resx">
-      <DependentUpon>Spelling_Bee.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Spelling_Test.resx">
       <DependentUpon>Spelling_Test.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student_Login.resx">
       <DependentUpon>Student_Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherLogin.resx">
-      <DependentUpon>TeacherLogin.vb</DependentUpon>
+    <EmbeddedResource Include="TeacherCheck.resx">
+      <DependentUpon>TeacherCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersLogin.resx">
+      <DependentUpon>TeachersLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="\\file-home1\TomOye161%24\Computing\Year 2\Spelling Bee\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
