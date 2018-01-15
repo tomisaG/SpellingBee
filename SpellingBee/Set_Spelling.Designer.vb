@@ -40,11 +40,11 @@ Partial Class Set_Spelling
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(50, 138)
+        Me.Label1.Location = New System.Drawing.Point(40, 138)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(44, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Set Spelling"
+        Me.Label1.Text = "Spelling"
         '
         'txtSpelling
         '
@@ -65,7 +65,7 @@ Partial Class Set_Spelling
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(56, 216)
+        Me.Label2.Location = New System.Drawing.Point(40, 205)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 13)
         Me.Label2.TabIndex = 3
@@ -73,7 +73,7 @@ Partial Class Set_Spelling
         '
         'cmd_Test
         '
-        Me.cmd_Test.Location = New System.Drawing.Point(143, 210)
+        Me.cmd_Test.Location = New System.Drawing.Point(143, 199)
         Me.cmd_Test.Name = "cmd_Test"
         Me.cmd_Test.Size = New System.Drawing.Size(200, 20)
         Me.cmd_Test.TabIndex = 4
@@ -81,11 +81,11 @@ Partial Class Set_Spelling
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(50, 101)
+        Me.Label3.Location = New System.Drawing.Point(40, 101)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(55, 13)
+        Me.Label3.Size = New System.Drawing.Size(51, 13)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Defination"
+        Me.Label3.Text = "Definition"
         '
         'txtDefinition
         '
@@ -116,7 +116,7 @@ Partial Class Set_Spelling
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(56, 179)
+        Me.Label5.Location = New System.Drawing.Point(40, 170)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(70, 13)
         Me.Label5.TabIndex = 9
@@ -132,7 +132,7 @@ Partial Class Set_Spelling
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(60, 239)
+        Me.Label6.Location = New System.Drawing.Point(40, 236)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 13)
         Me.Label6.TabIndex = 11
