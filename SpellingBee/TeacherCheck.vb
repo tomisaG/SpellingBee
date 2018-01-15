@@ -4,8 +4,8 @@ Public Class TeacherCheck
 	Dim names(100) As String
 	Dim x As Integer = 0
 	Private Sub cmd_check_Click(sender As Object, e As EventArgs) Handles cmd_check.Click
-		Dim filename As String = "\\file-home1\TomOye161$\Computing\Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug/Spelling_Create.csv"
-		Dim reader As New StreamReader(filename, Encoding.Default)
+        Dim filename As String = "\\file-home1\TomOye161$\Computing\Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug\Student_Results.csv"
+        Dim reader As New StreamReader(filename, Encoding.Default)
 		Dim fullline As String = ""
 		Do
 			fullline = reader.ReadLine
