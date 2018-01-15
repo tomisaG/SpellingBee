@@ -103,7 +103,7 @@ Partial Class Admin_page
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(381, 353)
+        Me.Button1.Location = New System.Drawing.Point(361, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(106, 43)
         Me.Button1.TabIndex = 12
@@ -147,7 +147,7 @@ Partial Class Admin_page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(519, 437)
+        Me.ClientSize = New System.Drawing.Size(508, 354)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txt_TS)
         Me.Controls.Add(Me.Label6)

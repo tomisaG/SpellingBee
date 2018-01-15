@@ -3,9 +3,11 @@
 Public Class Spelling_Test
     Dim answer(100) As String
     Dim Definition(100) As String
-    Dim c As Integer = 0
+    Dim wordCounter As Integer = 0
+    Dim QuestionNumber As Integer = 1
     Dim x As Integer = 0
-
+    Dim score As Integer
+    Dim time As String
     Private DefWords As New List(Of String())
     Private DefWords_SIZE As Integer
 
@@ -33,17 +35,33 @@ Public Class Spelling_Test
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles cmd_start.Click
         cmd_start.Text = "Continue"
-        lbl_Question.Text = "Question " & c
+        lbl_Question.Text = "Question " & QuestionNumber
         Dim fullline As String = ""
         Dim answer As String = ""
-        Dim time As String
+        Dim x As Integer = 0
+        Dim Def As String
         RefreshDefWords()
-        txt_Defination.Text = Definition(c)
-        c += 1
+        DefWords(wordCounter)(0) = Def
+        Do Until x = 10
+            txt_Defination.Text = Def
+            x = x + 1
+            wordCounter += 1
+            Cmd_Check.Enabled = True
+        Loop
+
     End Sub
 
     Private Sub Spelling_Test_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Cmd_Check.Enabled = False
+        Dim fullline As String = ""
+        FileOpen(1, "n:\Computing\Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug\Spelling_Create.csv", OpenMode.Input)
+        Do Until EOF(1)
+            fullline = LineInput(1)
+            Dim item() As String = Split(fullline, ",")
+            time = item(2)
+        Loop
+        FileClose(1)
+        time = txt_DateSet.Text
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txt_Defination.TextChanged
@@ -51,53 +69,39 @@ Public Class Spelling_Test
     End Sub
 
     Private Sub Cmd_Check_Click(sender As Object, e As EventArgs) Handles Cmd_Check.Click
-        Dim fullline As String = ""
-        Dim words As String
-        Dim ThreeLetters As String = ""
-        Dim ThreeInputs As String = ""
+        Dim fullWord As String
+        Dim AllLetters(10) As String
+        Dim AllInputs(10) As String
         RefreshDefWords()
-
-        Dim letters() = answer(c).ToCharArray()
-        words = txt_answer.Text
-        Dim inputs() = words.ToCharArray()
-
-        For Orderletter = 2 To (letters.Length) - 1
-            ThreeLetters = letters(Orderletter)
+        Dim LetterArray() As Char = DefWords(x)(1)
+        Dim CharArray() As Char = txt_answer.Text
+        For control = 0 To LetterArray.Length - 1
+            AllLetters(control) = LetterArray(control)
         Next
-        For Orderinputs = 2 To (inputs.Length) - 1
-            ThreeLetters = inputs(Orderinputs)
+        For Order = 0 To CharArray.Length - 1
+            AllInputs(Order) = CharArray(Order)
         Next
+        fullWord = DefWords(x)(1)
+        If fullWord = txt_answer.Text Then
+            MsgBox("Full Marks")
+            score = score + 5
+        Else score = score + 0
+            MsgBox("No Marks")
+            If AllInputs(0) = AllLetters(0) And AllInputs(1) = AllLetters(1) And AllInputs(2) = AllLetters(2) Then
+                MsgBox("3 Marks")
+                score = score + 3
+            ElseIf DefWords(x).ToString = txt_answer.Text Then
+                score = score - 2
+            End If
+            If DefWords(x).ToString <> txt_answer.Text Then
+                score = score + 0
+            End If
+        End If
 
-        If ThreeLetters = ThreeInputs Then
-            MsgBox("3 Marks")
-        Else
-            MsgBox("incorrect")
-        End If
-        If txt_answer.Text = answer(c) Then
-            MsgBox("5 Marks")
-        Else
-            MsgBox("3 Marks")
-        End If
-        c += 1
+        x += 1
+        Cmd_score.Text = score
+        Cmd_Check.Enabled = False
         Clear()
-    End Sub
-    Private Sub cmd_answer_TextChanged(sender As Object, e As EventArgs) Handles txt_answer.TextChanged
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged_1(sender As Object, e As EventArgs) Handles txt_DateSet.TextChanged
-        Dim fullline As String = ""
-        Dim time As String
-        FileOpen(1, "n:\Computing\Year 2\Spelling Bee\SpellingBee\SpellingBee\bin\Debug\Spelling_Create.csv", OpenMode.Input)
-        Do Until EOF(1)
-            fullline = LineInput(1)
-            Dim item() As String = Split(fullline, ",")
-            txt_Defination.Text = item(0)
-            time = item(3)
-
-        Loop
-        FileClose(1)
-        time = txt_DateSet.Text
     End Sub
     Sub Clear()
         txt_answer.Text = ""

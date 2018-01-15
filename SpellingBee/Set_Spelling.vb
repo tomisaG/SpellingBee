@@ -9,8 +9,8 @@ Public Class Set_Spelling
         Dim timeDef As String = cmd_Definition.Value
         Dim fullline As String
         Do Until x = 1
-			fullline = txtDefinition.Text & "," & txtSpelling.Text & "," & time & "," & timeDef & "," & txt_YearGroup.Text
-			PrintLine(1, fullline)
+            fullline = txtDefinition.Text & "," & time & "," & timeDef & "," & txt_YearGroup.Text
+            PrintLine(1, fullline)
 			x = x + 1
         Loop
         FileClose()
@@ -24,4 +24,7 @@ Public Class Set_Spelling
 
     End Sub
 
+    Private Sub txtSpelling_TextChanged(sender As Object, e As EventArgs) Handles txtSpelling.TextChanged
+
+    End Sub
 End Class
