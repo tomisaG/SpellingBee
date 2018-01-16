@@ -27,4 +27,8 @@ Public Class Set_Spelling
     Private Sub txtSpelling_TextChanged(sender As Object, e As EventArgs) Handles txtSpelling.TextChanged
 
     End Sub
+
+    Private Sub cmd_Definition_ValueChanged(sender As Object, e As EventArgs) Handles cmd_Definition.ValueChanged
+
+    End Sub
 End Class
